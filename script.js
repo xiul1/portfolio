@@ -2300,7 +2300,7 @@ const populateModalContent = (projectDetail) => {
   if (modalTitle) modalTitle.textContent = projectDetail.title ?? "Project";
   if (modalType) modalType.textContent = projectDetail.type ?? "Project Type";
   if (modalDescription) {
-    modalDescription.textContent = projectDetail.description ?? projectDetail.frontIntro ?? "";
+    modalDescription.innerHTML = projectDetail.description ?? projectDetail.frontIntro ?? "";
   }
 
   renderProjectSignals(projectDetail.signals ?? []);
