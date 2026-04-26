@@ -1048,6 +1048,9 @@ const buildLogoBurstCardMarkup = ({ indexLabel, detail, cover }) => {
   const impactText = cover?.impact?.text ?? "";
   const impactMode = sanitizeClassToken(cover?.impact?.mode);
   const impactClass = impactMode ? ` project-card__impact--${impactMode}` : "";
+  const logoMarkStyle = cover?.logo?.asset
+    ? ` style="--cover-logo-asset: url('${BASE}${cover.logo.asset}')"`
+    : "";
 
   return `
     <span class="project-card__cover" aria-hidden="true">
@@ -1058,7 +1061,7 @@ const buildLogoBurstCardMarkup = ({ indexLabel, detail, cover }) => {
       <span class="project-card__cover-bubble"></span>
       <span class="project-card__cover-fragments"></span>
       <span class="project-card__logo">
-        <span class="project-card__logo-mark"></span>
+        <span class="project-card__logo-mark"${logoMarkStyle}></span>
       </span>
     </span>
     <span class="project-card__impact${impactClass}" aria-hidden="true">${escapeHtml(impactText)}</span>
