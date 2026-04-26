@@ -685,7 +685,7 @@ const PROJECT_DETAILS = {
       },
       impact: { text: "AUTH!", mode: "subtle" },
     },
-    preview: { images: [{ src: "img/KeyManager.png", alt: "KeyManager" },{src: "img/KeyManager2.png", alt: "KeyManager2"}] },
+    preview: { images: [{ src: "img/KeyManager.png", alt: "KeyManager" }] },
     proofs: [],
   },
 };
