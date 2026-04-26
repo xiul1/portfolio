@@ -31,5 +31,6 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [assistantApiPlugin()],
+    base: process.env.VITE_BASE ?? "/",
   };
 });
