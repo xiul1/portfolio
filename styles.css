@@ -1687,6 +1687,7 @@ body[data-issue="06"] {
 
 .projects-section.section-shell {
   width: min(1440px, calc(100% - 1.4rem));
+  padding-top: 4rem;
 }
 
 .skill-universe__header {
@@ -2169,7 +2170,7 @@ body[data-issue="06"] {
 }
 
 .projects-section .section-heading {
-  margin-bottom: 2.6rem;
+  margin-bottom: 1.6rem;
 }
 
 .projects-section .section-summary {
