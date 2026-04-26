@@ -694,7 +694,6 @@ const PROJECT_DETAILS = {
 
 const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 const easeOutCubic = (value) => 1 - (1 - value) ** 3;
-const easeInCubic = (value) => value ** 3;
 const easeInOutQuad = (value) =>
   value < 0.5 ? 2 * value * value : 1 - ((-2 * value + 2) ** 2) / 2;
 const isLocalizedValue = (value) =>
